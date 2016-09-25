@@ -1,14 +1,14 @@
 /*jslint node: true */
 'use strict';
 
-var winston = require('winston'),
-    path = require('path'),
-    fs = require('fs'),
-    yaml = require('js-yaml'),
-    async = require('async'),
-    mqtt = require('mqtt'),
-    fs = require('fs'),
-    FtpServer = require('ftpd').FtpServer;
+const winston   = require( 'winston' ),
+      path      = require( 'path' ),
+      fs        = require( 'fs' ),
+      yaml      = require( 'js-yaml' ),
+      async     = require( 'async' ),
+      mqtt      = require( 'mqtt' ),
+      fs        = require( 'fs' ),
+      FtpServer = require( 'ftpd' ).FtpServer;
 
 var CONFIG_DIR = process.env.CONFIG_DIR || process.cwd(),
     CONFIG_FILE = path.join(CONFIG_DIR, 'config.yml'),
